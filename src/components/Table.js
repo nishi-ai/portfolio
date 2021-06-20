@@ -1,5 +1,43 @@
 import React, {Component} from 'react'
 
+
+const characters = [
+    {
+      name: 'Charlie',
+      job: 'Janitor',
+    },
+    {
+      name: 'Mac',
+      job: 'Bouncer',
+    },
+    {
+      name: 'Dee',
+      job: 'Aspring actress',
+    },
+    {
+      name: 'Dennis',
+      job: 'Bartender',
+    },
+  ]
+const characters2 = [
+    {
+      name: 'Charlie',
+      job: 'Janitor',
+    },
+    {
+      name: 'Mac',
+      job: 'Bouncer',
+    },
+    {
+      name: 'Dee',
+      job: 'Aspring actress',
+    },
+    {
+      name: 'Dennis',
+      job: 'Bartender',
+    },
+  ]
+
 const TableHeader = () => {
     return(
         <thead>
@@ -28,12 +66,13 @@ class Table extends Component {
     // we can access all props through this.props. 
     // We're only passing one props through, characterData,
     // so we'll use this.props.characterData to retrieve that array data
-    const {characterData} = this.props
+    // const {characterData} = this.props
     
     return (
       <table>
         <TableHeader />
-        <TableBody characterData={characterData} />
+        <TableBody characterData={characters} />
+        <TableBody characterData={characters2} />
       </table>
     )
   }

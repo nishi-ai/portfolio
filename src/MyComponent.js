@@ -7,24 +7,24 @@ class MyComponent extends Component {
 
     // life cycle methods
     componentDidMount(){
-        // birthday  
+        // like birthday  
         console.log("boom!!!!!");
 
-        // setTimeout(() => {
-        //     this.setState({
-        //         text: "Hello"
-        //     })
-        // }, 2000);
+        setTimeout(() => {
+            this.setState({
+                text: "Hello"
+            })
+        }, 2000);
     }
 
 
     render(){
         return (<div>
-            <button onClick={() => {
+            {/* <button onClick={() => {
                 this.setState({
                     text: "Hello"
                 })
-            }}>change text</button>
+            }}>change text</button> */}
             <span>{this.state.text}</span>
             <br/>
             <span>1 {this.props.shouldsay} 2</span>
