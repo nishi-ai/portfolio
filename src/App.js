@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {Component} from 'react';
 import About from './components/About';
@@ -29,8 +28,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* {JSON.stringify(data.main)} */}
-          <img src={logo} className="App-logo" alt="logo" />
           <Header data={data.main}/>
           <About data={data.main}/>
           <Portfolio data={data.portfolio}/>

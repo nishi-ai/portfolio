@@ -6,6 +6,14 @@ body { background: #0f0f0f; }
    align-items: center;
    justify-content: center;
 }
+
+.profile-pic {
+   border-radius: 50%;
+   padding: 40px;
+   width: 200px;
+   height: 200px;
+}
+ 
 /* header social links */
 header .social {
    margin: 24px 0;

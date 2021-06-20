@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Portfolio extends Component {
   render() {
@@ -16,7 +17,7 @@ class Portfolio extends Component {
                      <p>{projects.category}</p>
                   </div>
                 </div>
-              <div className="link-icon"><i className="fa fa-link"></i></div>
+              <div className="link-icon"><FontAwesomeIcon icon={['fas', 'link']} /></div>
             </a>
           </div>
         </div>
