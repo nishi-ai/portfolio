@@ -31,6 +31,12 @@
         "category": "Host your special activity for everyone in the world. Get experience new world",
         "image": "new_encounters.png",
         "url": "//"
+      },
+      {
+        "title": "Portfolio with my first ever using React",
+        "category": "omg. React is so comlicated",
+        "image": "react_portfolio.png",
+        "url": "//"
       }
     ]
   },

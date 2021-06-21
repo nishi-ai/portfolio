@@ -20,7 +20,7 @@ class Header extends Component {
         <div className="row banner">
            <div className="banner-text">
                 <img className="profile-pic"  src={profilePic} alt="" />
-                <h1 className="responsive-headline">Hello! I'm {name}.</h1>
+                <h2 className="responsive-headline">Hello! I'm {name}.</h2>
                 <h3>A {city} based <span>{occupation}</span></h3>
                 <hr />
                 <ul className="social">

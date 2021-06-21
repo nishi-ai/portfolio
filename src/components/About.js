@@ -1,19 +1,32 @@
-import React, { Component } from 'react';  
+import React, { Component } from 'react';
+//  react-copy-to-clipboard package
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+// typed react
+import Typed from 'react-typed';
 class About extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            isCopied: false
+            isCopied: false,
+            onHover: false
         }
     }
     // onCopyText function to toggle this state
+    // The onCopy prop is run when the text is copied.
     onCopyText = () => {
         this.setState({ isCopied: true })
         setTimeout(() => {
            this.setState({ isCopied: false })
+        }, 1000);
+    };
+
+    // onHober function to toggle this state
+    // The onCopy prop is run when the text is copied.
+    onHoverIcon = () => {
+        this.setState({ onHover: true })
+        setTimeout(() => {
+           this.setState({ onHover: false })
         }, 1000);
     };
     // render function
@@ -26,24 +39,19 @@ class About extends Component {
         }
         return (   
             <section id="about">
-                <div className="row">
-                    <div className="nine columns main-col">
-                        <div className="row">
-                            <div className="columns contact-details">
-                                <p className="address">
-                                    <h6>The most easiest way to email me <FontAwesomeIcon icon={['fas', 'leaf']} /></h6>
-                                    <span>{email}</span>
-                                    <CopyToClipboard text={email} onCopy={ this.onCopyText }>
-                                    <span>{this.state.isCopied ? <FontAwesomeIcon icon={['fas', 'clipboard-check']} /> : <FontAwesomeIcon icon={['fas', 'copy']} />}</span>
-                                    </CopyToClipboard>
-                                </p>
-                            </div>
-                        </div>
+                
+                    <div id="icon">
+                        <CopyToClipboard text={email} onCopy={ this.onCopyText }>
+                        <span>{this.state.isCopied ? <FontAwesomeIcon icon={['fas', 'clipboard-check']} /> : <FontAwesomeIcon icon={['fas', 'copy']} />}</span>
+                        </CopyToClipboard>
                     </div>
-                </div>
-
+                    <Typed
+                    strings={['aiaimforworld@gmail.com']}
+                    typeSpeed={50}
+                    />
             </section>
         );
     }
 }
+
 export default About;
