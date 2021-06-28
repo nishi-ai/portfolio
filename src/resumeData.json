@@ -37,6 +37,12 @@
         "category": "omg. React is so comlicated",
         "image": "react_portfolio.png",
         "url": "https://ainishikawa.herokuapp.com/"
+      },
+      {
+        "title": "Testing in Rails",
+        "category": "Fundamentals Testing with TDD",
+        "image": "testing_in_Rails.png",
+        "url": "https://github.com/nishi-ai/Testing_in_Rails"
       }
     ]
   },
