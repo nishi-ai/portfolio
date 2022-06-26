@@ -34,7 +34,7 @@
       },
       {
         "title": "Portfolio with my first ever using React",
-        "category": "omg. React is so comlicated",
+        "category": "My first React app",
         "image": "react_portfolio.png",
         "url": "https://ainishikawa.herokuapp.com/"
       },
@@ -43,6 +43,12 @@
         "category": "Fundamentals Testing with TDD",
         "image": "testing_in_Rails.png",
         "url": "https://github.com/nishi-ai/Testing_in_Rails"
+      },
+      {
+        "title": "cats & dogs softball Registration",
+        "category": "Registration full-stack app",
+        "image": "catsdogssoftball.png",
+        "url": "https://berlin.catsdogssoftball.com/"
       }
     ]
   },
