@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import About from './components/About';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
-import ThreeTest from './components/ThreeTest';
 
 //files for understanding components, state and props
 // import Table from './components/Table';
@@ -31,7 +30,6 @@ class App extends Component {
         <header className="App-header">
           <Header data={data.main}/>
           <About data={data.main}/>
-          <ThreeTest />
           <Portfolio data={data.portfolio}/>
         </header>
       </div>
