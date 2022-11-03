@@ -1,6 +1,43 @@
-body { background: #0f0f0f; }
+body { background: #282c34; }
 
 /* Header */
+.container-header {
+   margin: 30px;
+   background-color: #282c34;
+}
+
+.logo {
+   display: flex;
+}
+
+.logo-img {
+   width: 150px;
+   height: 150px;
+}
+ 
+nav {
+   margin-left: auto;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   font: #e6e0bb;
+   font: 15px/24px 'opensans-semibold', sans-serif;
+}
+
+nav a {
+   background: #282c34;
+   width: 150px;
+   text-align: center;
+   line-height: 150px;
+   text-decoration: none;
+   color: white;
+   display: block;
+}
+ 
 #home {
    padding: 30px;
    position: relative;
